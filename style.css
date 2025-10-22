@@ -307,3 +307,116 @@ footer {
     font-size: 1.1rem;
   }
 }
+
+/* === QUIZ STYLE UPDATE (VERTIKAL) === */
+.quiz-section {
+  background: linear-gradient(135deg, #ffffff, #f3f7fb);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #eee;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+#progress {
+  height: 100%;
+  width: 0%;
+  background: #b22222;
+  transition: width 0.4s ease-in-out;
+}
+
+#quiz-container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+#question {
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+/* Pilihan jawaban tersusun VERTIKAL */
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-option {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #e9ecef;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-option:hover {
+  background: #e75757;
+  color: #fff;
+  transform: scale(1.02);
+}
+
+/* Checkbox style (pilihan ganda kompleks) */
+.multi-option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background: #f7f9fc;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.multi-option:hover {
+  background: #e3f6fc;
+}
+
+/* Tombol dan feedback */
+.btn {
+  background: #b22222;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d63333;
+  transform: scale(1.05);
+}
+
+#feedback {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #333;
+  font-style: italic;
+}
+
+#score {
+  font-weight: 600;
+  margin-top: 25px;
+  font-size: 1rem;
+}
