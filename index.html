@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dekrit Presiden 1959 | Sejarah Indonesia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">SEJARAH 1959</div>
+    <nav class="nav-links">
+      <a href="#tentang">Tentang</a>
+      <a href="#latar-belakang">Latar Belakang</a>
+      <a href="#isi-dekrit">Isi Dekrit</a>
+      <a href="#dampak">Dampak</a>
+      <a href="#galeri">Galeri</a>
+    </nav>
+    <div class="hamburger" aria-label="menu" role="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Dekrit Presiden <span>5 Juli 1959</span></h1>
+      <p>Peristiwa penting dalam sejarah Indonesia yang mengubah arah pemerintahan kembali ke UUD 1945.</p>
+      <a href="#tentang" class="btn">Pelajari Lebih Lanjut</a>
+    </div>
+    <img src="image/1959_Sukarno's_Presidential_Decree.jpg" alt="Presiden Soekarno membacakan dekrit 1959">
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang" class="about">
+    <h2>Apa Itu Dekrit Presiden 1959?</h2>
+    <p>
+      Dekrit Presiden 5 Juli 1959 adalah keputusan yang dikeluarkan oleh Presiden Soekarno untuk
+      membubarkan Konstituante dan memberlakukan kembali Undang-Undang Dasar 1945.
+      Keputusan ini diambil karena lembaga Konstituante gagal menetapkan UUD baru bagi Indonesia.
+    </p>
+  </section>
+
+  <!-- LATAR BELAKANG -->
+  <section id="latar-belakang" class="section">
+    <h2>Latar Belakang</h2>
+    <p>
+      Setelah Pemilu 1955, dibentuk Konstituante dengan tugas menyusun UUD baru pengganti UUDS 1950.
+      Namun, hingga tahun 1959 lembaga ini tidak mencapai kesepakatan antara kelompok nasionalis, Islam, dan komunis.
+      Situasi politik menjadi tidak stabil, dan Presiden Soekarno akhirnya mengeluarkan dekrit untuk mengembalikan UUD 1945.
+    </p>
+  </section>
+
+  <!-- ISI DEKRIT -->
+  <section id="isi-dekrit" class="section">
+    <h2>Isi Pokok Dekrit Presiden</h2>
+    <ul class="list">
+      <li>Pembubaran Konstituante.</li>
+      <li>Pemberlakuan kembali UUD 1945 dan tidak berlakunya UUDS 1950.</li>
+      <li>Pembentukan MPRS dan DPAS sebagai lembaga negara.</li>
+    </ul>
+  </section>
+
+  <!-- DAMPAK -->
+  <section id="dampak" class="section">
+    <h2>Dampak Dekrit Presiden</h2>
+    <p>
+      Dekrit ini menandai awal berlakunya sistem Demokrasi Terpimpin di Indonesia.
+      Presiden memiliki kekuasaan yang lebih besar, dan arah politik Indonesia menjadi lebih terpusat pada kepemimpinan nasional.
+      Walau menuai kritik, keputusan ini dinilai berhasil mengakhiri kebuntuan politik saat itu.
+    </p>
+  </section>
+
+  <!-- GALERI -->
+  <section id="galeri" class="projects-section">
+    <h2 class="section-title">Galeri Peristiwa</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="image/5e6620eab37e4.jpeg" alt="Pembacaan Dekrit 1959">
+        <h3>Pembacaan Dekrit Presiden</h3>
+      </div>
+
+      <div class="project-card">
+        <img src="image/623294922b9c3.jpeg" alt="Situasi Istana Negara">
+        <h3>Situasi Istana Negara</h3>
+      </div>
+
+      <div class="project-card">
+        <img src="image/5e44122d06d70.jpg" alt="Surat Asli Dekrit">
+        <h3>Surat Asli Dekrit</h3>
+      </div>
+
+      <div class="project-card">
+        <img src="image/dekrit-5-juli-1959-upaya-bung-karno-selamatkan-revolusi-35Ryfu7tnu.jpg" alt="Pidato Soekarno">
+        <h3>Pidato Soekarno</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Website Sejarah — Dekrit Presiden 1959 | Dibuat oleh Kinan Deryl Ambia</p>
+  </footer>
+
+  <!-- SCRIPT MENU -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("open");
+    });
+
+    // tutup menu saat klik link (mobile)
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
