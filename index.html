@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dekrit Presiden 1959 | Sejarah Indonesia</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -19,6 +17,8 @@
       <a href="#isi-dekrit">Isi Dekrit</a>
       <a href="#dampak">Dampak</a>
       <a href="#galeri">Galeri</a>
+      <a href="#kuis">Kuis</a>
+      <a href="#referensi">Referensi</a>
     </nav>
     <div class="hamburger" aria-label="menu" role="button">
       <span></span>
@@ -41,19 +41,7 @@
   <section id="tentang" class="about">
     <h2>Apa Itu Dekrit Presiden 1959?</h2>
     <p>
-      Dekrit Presiden 5 Juli 1959 adalah keputusan yang dikeluarkan oleh Presiden Soekarno untuk
-      membubarkan Konstituante dan memberlakukan kembali Undang-Undang Dasar 1945.
-      Keputusan ini diambil karena lembaga Konstituante gagal menetapkan UUD baru bagi Indonesia.
-    </p>
-  </section>
-
-  <!-- LATAR BELAKANG -->
-  <section id="latar-belakang" class="section">
-    <h2>Latar Belakang</h2>
-    <p>
-      Setelah Pemilu 1955, dibentuk Konstituante dengan tugas menyusun UUD baru pengganti UUDS 1950.
-      Namun, hingga tahun 1959 lembaga ini tidak mencapai kesepakatan antara kelompok nasionalis, Islam, dan komunis.
-      Situasi politik menjadi tidak stabil, dan Presiden Soekarno akhirnya mengeluarkan dekrit untuk mengembalikan UUD 1945.
+      Dekrit Presiden 5 Juli 1959 dikeluarkan oleh Presiden Soekarno untuk mengatasi kebuntuan politik akibat gagalnya Konstituante menyusun UUD baru pengganti UUDS 1950. Sejak Pemilu 1955, perbedaan ideologi antar partai membuat pemerintahan tidak stabil dan mengancam persatuan bangsa. Melalui dekrit ini, Soekarno membubarkan Konstituante, memberlakukan kembali UUD 1945, serta membentuk MPRS dan DPAS. Dekrit tersebut mendapat dukungan luas dari rakyat dan militer karena dianggap menyelamatkan bangsa dari krisis politik, sekaligus menandai berlakunya kembali sistem presidensial dan dimulainya era Demokrasi Terpimpin.
     </p>
   </section>
 
@@ -67,16 +55,6 @@
     </ul>
   </section>
 
-  <!-- DAMPAK -->
-  <section id="dampak" class="section">
-    <h2>Dampak Dekrit Presiden</h2>
-    <p>
-      Dekrit ini menandai awal berlakunya sistem Demokrasi Terpimpin di Indonesia.
-      Presiden memiliki kekuasaan yang lebih besar, dan arah politik Indonesia menjadi lebih terpusat pada kepemimpinan nasional.
-      Walau menuai kritik, keputusan ini dinilai berhasil mengakhiri kebuntuan politik saat itu.
-    </p>
-  </section>
-
   <!-- GALERI -->
   <section id="galeri" class="projects-section">
     <h2 class="section-title">Galeri Peristiwa</h2>
@@ -85,17 +63,14 @@
         <img src="image/5e6620eab37e4.jpeg" alt="Pembacaan Dekrit 1959">
         <h3>Pembacaan Dekrit Presiden</h3>
       </div>
-
       <div class="project-card">
         <img src="image/623294922b9c3.jpeg" alt="Situasi Istana Negara">
         <h3>Situasi Istana Negara</h3>
       </div>
-
       <div class="project-card">
         <img src="image/5e44122d06d70.jpg" alt="Surat Asli Dekrit">
         <h3>Surat Asli Dekrit</h3>
       </div>
-
       <div class="project-card">
         <img src="image/dekrit-5-juli-1959-upaya-bung-karno-selamatkan-revolusi-35Ryfu7tnu.jpg" alt="Pidato Soekarno">
         <h3>Pidato Soekarno</h3>
@@ -103,28 +78,227 @@
     </div>
   </section>
 
+  <!-- KUIS INTERAKTIF -->
+  <section id="kuis" class="section quiz-section">
+    <h2>Kuis Interaktif: Uji Pengetahuanmu!</h2>
+    <div class="progress-bar"><div id="progress"></div></div>
+
+    <div id="quiz-container">
+      <div id="question"></div>
+      <div id="options"></div>
+      <p id="feedback"></p>
+      <button id="next-btn" class="btn">Selanjutnya</button>
+      <p id="score"></p>
+      <button id="restart-btn" class="btn" style="display:none;">Ulangi Kuis</button>
+    </div>
+  </section>
+
+  <!-- REFERENSI -->
+  <section id="referensi" class="section">
+    <h2>Referensi Sejarah</h2>
+    <ul class="list">
+      <li>Arsip Nasional Republik Indonesia – Dokumen Dekrit Presiden 1959.</li>
+      <li>Buku <i>Sejarah Indonesia Modern</i> karya Prof. Sartono Kartodirdjo.</li>
+      <li>Museum Kebangkitan Nasional, Koleksi Sejarah Politik Indonesia.</li>
+      <li>Kompas.com – “Dekrit Presiden 1959: Latar Belakang dan Dampaknya”.</li>
+      <li>Wikipedia Indonesia – “Dekrit Presiden 5 Juli 1959”.</li>
+    </ul>
+  </section>
+
   <!-- FOOTER -->
   <footer>
     <p>© 2025 Website Sejarah — Dekrit Presiden 1959 | Dibuat oleh Kinan Deryl Ambia</p>
   </footer>
 
-  <!-- SCRIPT MENU -->
   <script>
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
+  // ======== MENU RESPONSIVE ========
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("open");
+  });
 
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-      hamburger.classList.toggle("open");
-    });
+  // ======== KUIS DATA ========
+  const quizData = [
+    {
+      q: "1. Siapa yang mengeluarkan Dekrit Presiden 1959?",
+      type: "single",
+      options: ["Soekarno", "Moh. Hatta", "Sutan Sjahrir", "Soeharto"],
+      correct: [0],
+      explain: "Dekrit Presiden 1959 dikeluarkan oleh Presiden Soekarno pada 5 Juli 1959."
+    },
+    {
+      q: "2. Apa tujuan utama Dekrit Presiden 1959?",
+      type: "single",
+      options: ["Menyelamatkan negara dari krisis politik", "Mendirikan kerajaan baru", "Menghapus UUD 1945", "Menurunkan presiden"],
+      correct: [0],
+      explain: "Tujuan utamanya adalah menyelamatkan negara dari kebuntuan politik akibat gagalnya Konstituante menetapkan UUD baru."
+    },
+    {
+      q: "3. Tahun berapakah Dekrit Presiden diumumkan?",
+      type: "single",
+      options: ["1950", "1955", "1959", "1965"],
+      correct: [2],
+      explain: "Dekrit tersebut dibacakan pada 5 Juli 1959 di Istana Merdeka, Jakarta."
+    },
+    {
+      q: "4. Pilih isi pokok dari Dekrit Presiden 1959!",
+      type: "multiple",
+      options: ["Pembubaran Konstituante", "Pemberlakuan kembali UUD 1945", "Pembentukan MPRS dan DPAS", "Pemindahan ibu kota ke Yogyakarta"],
+      correct: [0, 1, 2],
+      explain: "Isi pokok Dekrit: membubarkan Konstituante, memberlakukan kembali UUD 1945, dan membentuk MPRS serta DPAS."
+    },
+    {
+      q: "5. Apa dampak penting dari Dekrit Presiden 1959?",
+      type: "multiple",
+      options: ["Mulainya Demokrasi Terpimpin", "Kekuasaan presiden meningkat", "Sistem parlementer kembali diterapkan", "Stabilitas politik meningkat"],
+      correct: [0, 1, 3],
+      explain: "Dampaknya antara lain: dimulainya Demokrasi Terpimpin, meningkatnya kekuasaan presiden, dan terciptanya stabilitas politik."
+    }
+  ];
 
-    // tutup menu saat klik link (mobile)
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('open');
+  // ======== VARIABEL ========
+  let current = 0,
+      score = 0;
+
+  const questionEl = document.getElementById("question");
+  const optionsEl = document.getElementById("options");
+  const feedbackEl = document.getElementById("feedback");
+  const nextBtn = document.getElementById("next-btn");
+  const scoreEl = document.getElementById("score");
+  const restartBtn = document.getElementById("restart-btn");
+  const progress = document.getElementById("progress");
+
+  // ======== LOAD SOAL ========
+  function loadQuestion() {
+    const q = quizData[current];
+    questionEl.textContent = q.q;
+    optionsEl.innerHTML = "";
+    feedbackEl.textContent = "";
+
+    // disable next until user answers
+    nextBtn.disabled = true;
+
+    // update progress (current before answering)
+    progress.style.width = (current / quizData.length) * 100 + "%";
+
+    if (q.type === "single") {
+      q.options.forEach((opt, i) => {
+        const btn = document.createElement("button");
+        btn.textContent = opt;
+        btn.classList.add("btn-option");
+        btn.addEventListener("click", () => checkSingle(i, btn));
+        optionsEl.appendChild(btn);
       });
-    });
-  </script>
+    } else {
+      q.options.forEach((opt, i) => {
+        const label = document.createElement("label");
+        label.classList.add("multi-option");
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.value = i;
+        // make label click check the box
+        label.appendChild(checkbox);
+        label.append(" " + opt);
+        optionsEl.appendChild(label);
+      });
+
+      // create a dedicated submit (only this will be disabled later)
+      const doneBtn = document.createElement("button");
+      doneBtn.textContent = "Periksa Jawaban";
+      doneBtn.classList.add("btn");
+      doneBtn.addEventListener("click", () => checkMultiple(doneBtn));
+      optionsEl.appendChild(doneBtn);
+    }
+  }
+
+  // ======== CEK SINGLE ========
+  function checkSingle(selected, btn) {
+    const q = quizData[current];
+    const correct = q.correct[0];
+
+    // disable all option buttons so user can't change
+    document.querySelectorAll(".btn-option").forEach(b => b.disabled = true);
+
+    if (selected === correct) {
+      btn.style.background = "#4CAF50";
+      btn.style.color = "#fff";
+      feedbackEl.textContent = "✅ Benar! " + q.explain;
+      score++;
+    } else {
+      btn.style.background = "#e74c3c";
+      btn.style.color = "#fff";
+      feedbackEl.textContent = "❌ Salah. " + q.explain;
+    }
+
+    // enable Next
+    nextBtn.disabled = false;
+    // update progress to reflect answered
+    progress.style.width = ((current + 1) / quizData.length) * 100 + "%";
+  }
+
+  // ======== CEK MULTIPLE ========
+  function checkMultiple(submitBtn) {
+    const q = quizData[current];
+    const selected = Array.from(optionsEl.querySelectorAll("input[type='checkbox']:checked")).map(el => parseInt(el.value));
+    const correct = q.correct.slice().sort();
+    const selSorted = selected.slice().sort();
+
+    // compare arrays: lengths and each item equal
+    const allCorrect = selSorted.length === correct.length && selSorted.every((v, idx) => v === correct[idx]);
+
+    // disable checkboxes so user can't change
+    optionsEl.querySelectorAll("input[type='checkbox']").forEach(el => el.disabled = true);
+
+    // only disable the submit button passed in (NOT the global next button)
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Jawaban Dikunci";
+
+    if (allCorrect) {
+      feedbackEl.textContent = "✅ Benar! " + q.explain;
+      score++;
+    } else {
+      feedbackEl.textContent = "❌ Salah. " + q.explain;
+    }
+
+    // enable Next
+    nextBtn.disabled = false;
+    progress.style.width = ((current + 1) / quizData.length) * 100 + "%";
+  }
+
+  // ======== NEXT ========
+  nextBtn.addEventListener("click", () => {
+    current++;
+    if (current < quizData.length) {
+      loadQuestion();
+    } else {
+      showResult();
+    }
+  });
+
+  function showResult() {
+    questionEl.textContent = "🎉 Kuis Selesai!";
+    optionsEl.innerHTML = "";
+    feedbackEl.textContent = "";
+    nextBtn.style.display = "none";
+    restartBtn.style.display = "inline-block";
+    scoreEl.textContent = `Skor kamu: ${score} dari ${quizData.length}`;
+    progress.style.width = "100%";
+  }
+
+  restartBtn.addEventListener("click", () => {
+    current = 0;
+    score = 0;
+    nextBtn.style.display = "inline-block";
+    restartBtn.style.display = "none";
+    scoreEl.textContent = "";
+    loadQuestion();
+  });
+
+  // start
+  loadQuestion();
+</script>
+
 </body>
 </html>
